@@ -43,7 +43,6 @@ main{
 .controls{
     /* flex-grow: 1; Tar så mye plass som er tilgjengelig */
     flex-basis: 50%; /*Tar så mye plass som er tilgjengelig*/
-    border: 2px solid white;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -52,7 +51,7 @@ main{
 
 .controls__button{
     width: 16rem;
-    padding: var(--spacing-medium);
+    padding: var(--spacing-medium) 0;
     background-color: transparent; /*Gjennomsiktig bakgrunn på knappene*/
     font-family: inherit; /*Betyr at den bruker samme font som ellers i dokumentet*/
     font-size: var(--spacing-medium);
@@ -64,4 +63,13 @@ main{
 
 .controls__button:hover{ /*Hover on buttons*/
     box-shadow: 0 0 16px var(--primary-color);
+}
+
+.stopwatch__guide{
+    visibility: hidden; /*Alternativ til "display: none" (her tas det ut av siden). Visibility gjør at det skjules uten å fjernes fra plassen sin*/
+    padding: var(--spacing-small);
+    text-align: center;
+    font-size: var(--font-size-medium);
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
 }

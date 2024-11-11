@@ -3,12 +3,23 @@
     src: url(../assets/fonts/Orbitron/Orbitron-VariableFont_wght.ttf);
 }
 
-body{
-    font-family: Orbitron;
-    font-size: var(--font-size-small);
-}
-
 main{
     width: 100%;
     height: 100vh;
+    background-image: url(../assets/images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center-bottom;
+    font-family: Orbitron;
+    color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+.stopwatch{
+    width: 80%;
+    height: 40%;
+    backdrop-filter: blur(8px); /*Filter på container som gir blurry effekt*/
+    border: 4px solid var(--primary-color);
+}
+

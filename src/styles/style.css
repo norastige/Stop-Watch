@@ -66,10 +66,15 @@ main{
 }
 
 .stopwatch__guide{
-    /* visibility: hidden;  */
+    visibility: hidden; 
     padding: var(--spacing-small);
     text-align: center;
     font-size: var(--font-size-medium);
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.controls__button--start{
     background-color: var(--primary-color);
     color: var(--secondary-color);
 }

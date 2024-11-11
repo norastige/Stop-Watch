@@ -39,3 +39,29 @@ main{
     text-align: center;
     /* border: 2px solid white; */
 }
+
+.controls{
+    /* flex-grow: 1; Tar så mye plass som er tilgjengelig */
+    flex-basis: 50%; /*Tar så mye plass som er tilgjengelig*/
+    border: 2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-large);
+}
+
+.controls__button{
+    width: 16rem;
+    padding: var(--spacing-medium);
+    background-color: transparent; /*Gjennomsiktig bakgrunn på knappene*/
+    font-family: inherit; /*Betyr at den bruker samme font som ellers i dokumentet*/
+    font-size: var(--spacing-medium);
+    color: var(--primary-color);
+    border: 4px solid var(--primary-color);
+    transition: box-shadow 0.5s;
+    cursor: pointer;
+}
+
+.controls__button:hover{ /*Hover on buttons*/
+    box-shadow: 0 0 16px var(--primary-color);
+}

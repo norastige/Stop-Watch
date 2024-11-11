@@ -21,5 +21,21 @@ main{
     height: 40%;
     backdrop-filter: blur(8px); /*Filter på container som gir blurry effekt*/
     border: 4px solid var(--primary-color);
+    display: flex;
+    flex-direction: column;
 }
 
+.timer{
+    flex-basis: 50%; /*Setter avstand mellom elementene i container*/
+    font-size: var(--font-size-2xlarge);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: var(--spacing-medium);
+}
+
+.timer span{
+    width: 3ch; /*CH er relativt til tallet 0 i den spesifikke fonten. 3ch er nok plass til å romme 3*0-tall i Orbitron-fonten*/
+    text-align: center;
+    /* border: 2px solid white; */
+}
